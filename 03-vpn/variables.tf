@@ -1,21 +1,14 @@
 variable "common_tags" {
-    type = map
-    default = {
-        Project = "Roboshop"
-        Environment = "dev"
-        Terraform = "true"
-    }  
-}
-
-variable "sg_tags" {
-    type = map
-    default = {}  # it is optional
+  default = {
+    Project     = "roboshop"
+    Environment = "dev"
+    Terraform   = "true"
+  }
 }
 
 variable "project_name" {
   default = "roboshop"
 }
-
 variable "environment" {
   default = "dev"
 }
