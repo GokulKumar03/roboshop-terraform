@@ -1,7 +1,7 @@
 
 yum install ansible -y
 cd /tmp
-git clone https://github.com/daws-76s/roboshop-ansible-roles.git
+git clone https://github.com/GokulKumar03/roboshop-ansible-roles.git
 cd roboshop-ansible-roles
 ansible-playbook -e component=mongodb main.yaml
 ansible-playbook -e component=redis main.yaml
