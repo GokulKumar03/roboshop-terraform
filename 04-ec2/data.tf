@@ -85,10 +85,6 @@ data "aws_ssm_parameter" "private_subnet_ids" {
   name = "/${var.project_name}/${var.environment}/private_subnet_ids"
 }
 
-data "aws_ssm_parameter" "vpn_sg_id" {
-  name = "/${var.project_name}/${var.environment}/vpn_sg_id"
-}
-
 # output "vpc_info" {
 #   value = data.aws_subnet.selected.id
 # }
